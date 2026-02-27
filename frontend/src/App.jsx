@@ -1,11 +1,11 @@
 import './App.css'
+import HomePage from './pages/HomePage.jsx'
 
 function App() {
   return (
-    <>
-      <h1>Newcastle Wildcats Website</h1>
-        <p>In development, contact <b>jacoblewisshores@gmail.com</b></p>
-    </>
+      <>
+          <HomePage />
+      </>
   )
 }
 
