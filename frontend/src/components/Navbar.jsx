@@ -58,7 +58,7 @@ export default function Navbar() {
             </div>
 
             {isOpen && (
-                <ul className="flex text-white flex-col sm:hidden absolute top-16 left-0 w-full z-40 bg-[#05284b] p-4 space-y-2 rounded-b-md shadow-lg">
+                <ul className="flex text-white flex-col sm:hidden absolute top-16 left-0 w-full z-40 bg-[#05284b] p-4 space-y-2 rounded-b-md shadow-lg tracking-widest">
                     {navItems.map((item) => (
                         <li key={item.name}>
                             <NavLink
