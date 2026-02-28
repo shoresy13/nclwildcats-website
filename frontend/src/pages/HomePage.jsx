@@ -1,5 +1,6 @@
 import React from 'react';
 import MainLayout from '../layouts/MainLayout.jsx';
+import Button from '../components/Button.jsx';
 import HomeBg from '../assets/images/home-background.png';
 
 export default function HomePage() {
@@ -9,7 +10,7 @@ export default function HomePage() {
                 className="h-screen w-full bg-cover bg-center flex flex-col items-center justify-center text-white"
                 style={{ backgroundImage: `url(${HomeBg})` }}
             >
-                <div className="relative bottom-52 flex flex-col justify-center items-center">
+                <div className="relative bottom-40 flex flex-col justify-center items-center">
                     <h1 className="text-7xl font-extrabold tracking-widest">
                         NEWCASTLE WILDCATS
                     </h1>
@@ -17,6 +18,18 @@ export default function HomePage() {
                         UNIVERSITY ICE HOCKEY CLUB
                     </h2>
                 </div>
+
+                <div className="relative -bottom-50 mt-10 flex flex-row gap-15">
+                    <Button
+                        text="Join Now"
+                        onClick={() => console.log("Button clicked")}
+                    />
+                    <Button
+                        text="Learn More"
+                        onClick={() => console.log("Button clicked")}
+                    />
+                </div>
+
 
             </div>
         </MainLayout>
