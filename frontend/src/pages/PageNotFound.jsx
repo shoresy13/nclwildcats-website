@@ -7,10 +7,10 @@ export default function PageNotFound() {
 
     return (
         <div className="flex flex-col justify-center items-center min-h-screen px-4 text-center">
-            <h1 className="text-4xl sm:text-7xl font-extrabold tracking-widest mt-20">
+            <h1 className="font-extrabold tracking-widest mt-20 text-[clamp(1.2rem,5vw,3rem)] sm:text-[clamp(2rem,4vw,5rem)]">
                 WEBSITE IN DEVELOPMENT
             </h1>
-            <h2 className="text-xl sm:text-3xl font-bold tracking-widest mt-4">
+            <h2 className="font-bold tracking-widest mt-4 text-[clamp(0.9rem,3.5vw,1.5rem)] sm:text-[clamp(1.2rem,3vw,2.5rem)]">
                 PAGE NOT FOUND, CONTACT jacoblewisshores@gmail.com
             </h2>
 
