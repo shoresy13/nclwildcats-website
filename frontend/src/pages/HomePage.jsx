@@ -17,7 +17,7 @@ export default function HomePage() {
                     <h1 className="font-extrabold tracking-widest whitespace-nowrap text-[clamp(1.5rem,6vw,4rem)] sm:text-[clamp(1.5rem,5vw,5rem)] md:text-7xl">
                         NEWCASTLE WILDCATS
                     </h1>
-                    <h2 className="font-bold tracking-widest whitespace-nowrap text-[clamp(1.2rem,4vw,2rem)] sm:text-[clamp(1.5rem,3.5vw,2.5rem)] md:text-3xl">
+                    <h2 className="font-bold tracking-widest sm:mt-2 whitespace-nowrap text-[clamp(1.2rem,4vw,2rem)] sm:text-[clamp(1.5rem,3.5vw,2.5rem)] md:text-3xl">
                         UNIVERSITY ICE HOCKEY CLUB
                     </h2>
                 </div>
