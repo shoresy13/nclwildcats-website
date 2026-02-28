@@ -10,14 +10,14 @@ export default function HomePage() {
     return (
         <MainLayout>
             <div
-                className="h-screen w-full bg-cover bg-center flex flex-col items-center justify-center text-white"
+                className="h-screen w-screen bg-cover bg-center flex flex-col items-center justify-center text-white overflow-hidden"
                 style={{ backgroundImage: `url(${HomeBg})` }}
             >
-                <div className="relative bottom-35 sm:bottom-32 md:bottom-45 flex flex-col justify-center items-center text-center px-4 sm:px-6">
-                    <h1 className="font-extrabold tracking-widest whitespace-nowrap text-[clamp(1.5rem,6vw,4rem)] sm:text-[clamp(2.5rem,5vw,5rem)] md:text-7xl">
+                <div className="relative bottom-30 sm:bottom-32 md:bottom-45 flex flex-col justify-center items-center text-center px-4 sm:px-6">
+                    <h1 className="font-extrabold tracking-widest whitespace-nowrap text-[clamp(1.5rem,6vw,4rem)] sm:text-[clamp(1.5rem,5vw,5rem)] md:text-7xl">
                         NEWCASTLE WILDCATS
                     </h1>
-                    <h2 className="font-bold tracking-widest  whitespace-nowrap text-[clamp(1.2rem,4vw,2rem)] sm:text-[clamp(1.5rem,3.5vw,2.5rem)] md:text-3xl">
+                    <h2 className="font-bold tracking-widest whitespace-nowrap text-[clamp(1.2rem,4vw,2rem)] sm:text-[clamp(1.5rem,3.5vw,2.5rem)] md:text-3xl">
                         UNIVERSITY ICE HOCKEY CLUB
                     </h2>
                 </div>
