@@ -1,16 +1,19 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import MainLayout from '../layouts/MainLayout.jsx';
 import Button from '../components/Button.jsx';
 import HomeBg from '../assets/images/home-background.png';
 
 export default function HomePage() {
+    const navigate = useNavigate();
+
     return (
         <MainLayout>
             <div
                 className="h-screen w-full bg-cover bg-center flex flex-col items-center justify-center text-white"
                 style={{ backgroundImage: `url(${HomeBg})` }}
             >
-                <div className="relative bottom-40 flex flex-col justify-center items-center">
+                <div className="relative bottom-45 flex flex-col justify-center items-center">
                     <h1 className="text-7xl font-extrabold tracking-widest">
                         NEWCASTLE WILDCATS
                     </h1>
@@ -22,11 +25,11 @@ export default function HomePage() {
                 <div className="relative -bottom-50 mt-10 flex flex-row gap-15">
                     <Button
                         text="Join Now"
-                        onClick={() => console.log("Button clicked")}
+                        onClick={() => navigate('/pagenotfound')}
                     />
                     <Button
                         text="Learn More"
-                        onClick={() => console.log("Button clicked")}
+                        onClick={() => navigate('/pagenotfound')}
                     />
                 </div>
 

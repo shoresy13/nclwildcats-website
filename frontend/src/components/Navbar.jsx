@@ -6,10 +6,10 @@ import buiha from '../assets/images/buiha-bordered.png';
 export default function Navbar() {
     const navItems = [
         { name: "Home", path: "/" },
-        { name: "Games", path: "/games" },
-        { name: "Teams", path: "/teams" },
-        { name: "Gallery", path: "/gallery" },
-        { name: "Beginners", path: "/beginners" },
+        { name: "Games", path: "/pagenotfound" },
+        { name: "Teams", path: "/pagenotfound" },
+        { name: "Gallery", path: "/pagenotfound" },
+        { name: "Beginners", path: "/pagenotfound" },
     ];
 
     return (
