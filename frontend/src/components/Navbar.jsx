@@ -5,7 +5,7 @@ import buiha from '../assets/images/buiha-bordered.png';
 export default function Navbar() {
     return (
         <nav className="w-full fixed top-0 left-0 z-20 px-6 py-4 bg-[#05284b] h-20 flex justify-center items-center border-b-2 border-b-white">
-            <ul className="flex space-x-15 text-white tracking-widest">
+            <ul className="flex space-x-25 text-white tracking-widest">
                 <li className="hover:text-gray-300 cursor-pointer">Home</li>
                 <li className="hover:text-gray-300 cursor-pointer">Games</li>
                 <li className="hover:text-gray-300 cursor-pointer">Teams</li>
