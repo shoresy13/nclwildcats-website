@@ -1,16 +1,34 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import wildcats from '../assets/images/wildcats-bordered.png';
 import buiha from '../assets/images/buiha-bordered.png';
 
 export default function Navbar() {
+    const navItems = [
+        { name: "Home", path: "/" },
+        { name: "Games", path: "/games" },
+        { name: "Teams", path: "/teams" },
+        { name: "Gallery", path: "/gallery" },
+        { name: "Beginners", path: "/beginners" },
+    ];
+
     return (
         <nav className="w-full fixed top-0 left-0 z-20 px-6 py-4 bg-[#05284b] h-20 flex justify-center items-center border-b-2 border-b-white">
             <ul className="flex space-x-25 text-white tracking-widest">
-                <li className="hover:text-gray-300 cursor-pointer">Home</li>
-                <li className="hover:text-gray-300 cursor-pointer">Games</li>
-                <li className="hover:text-gray-300 cursor-pointer">Teams</li>
-                <li className="hover:text-gray-300 cursor-pointer">Gallery</li>
-                <li className="hover:text-gray-300 cursor-pointer">Beginners</li>
+                {navItems.map((item) => (
+                    <li key={item.name}>
+                        <NavLink
+                            to={item.path}
+                            className={({ isActive }) =>
+                                `cursor-pointer hover:text-gray-300 ${
+                                    isActive ? "text-white font-semibold     underline underline-offset-8" : ""
+                                }`
+                            }
+                        >
+                            {item.name}
+                        </NavLink>
+                    </li>
+                ))}
             </ul>
 
             <div className="absolute -bottom-20 left-6 w-40 h-40">

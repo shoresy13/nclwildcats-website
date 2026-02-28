@@ -9,11 +9,11 @@ export default function HomePage() {
                 className="h-screen w-full bg-cover bg-center flex flex-col items-center justify-center text-white"
                 style={{ backgroundImage: `url(${HomeBg})` }}
             >
-                <div className="relative bottom-48 flex flex-col justify-center items-center">
+                <div className="relative bottom-52 flex flex-col justify-center items-center">
                     <h1 className="text-7xl font-extrabold tracking-widest">
                         NEWCASTLE WILDCATS
                     </h1>
-                    <h2 className="text-3xl font-bold tracking-wide mt-4">
+                    <h2 className="text-3xl font-bold tracking-widest mt-4">
                         UNIVERSITY ICE HOCKEY CLUB
                     </h2>
                 </div>
